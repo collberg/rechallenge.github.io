@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "rechallenge",
-    "currentPage": "page4.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startupamp",
       "title": "StartupAMP",
@@ -148,7 +148,7 @@
             }
           },
           "_name": "header6",
-          "_customHTML": "<section class=\"header6\" group=\"Headers\" plugins=\"amp-main, font-awesome\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Icon Title\" name=\"showIconTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Title Text\" name=\"showTitleText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#117bb1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Grand Reverse Engineering Challenge</b><br><b>$10,000 Prize Sum</b></h1>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-10 mbr-col-md-12\">\n                <p class=\"mbr-fonts-style mbr-text mbr-white italic align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showTitleText\"><br>Our next challenge runs from April 1 to May 15. The total prize sum is USD 10,000. Individuals and groups are welcome to participate. The only requirement is that you run our data collection framework in the background (within a Linux virtual machine) as you solve the challenges. The data collected will be published (anonymized, of course) and used to learn how reverse engineers solve problems in practice.</p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg btn-secondary\" href=\"http://revenge.cs.arizona.edu/RevEngECompetition/ctf/RevEngE_CTF_splash.html\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                GET STARTED</a></div>\n        </div>\n    </div>\n    <div class=\"padding\"></div>\n    <div class=\"mbr-row mbr-justify-content-center\">\n        <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{\n        'mbr-col-lg-6': cardsAmount == 2,                                                \n        'mbr-col-lg-4': cardsAmount == 3,\n        'mbr-col-lg-3': cardsAmount == 4,                                             \n        'mbr-col-lg-2': cardsAmount > 4,\n        'last-child': cardsAmount == 1}\">\n        <div class=\"card-wrapper\">\n            <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n                <span class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont mbri-lock\"></span>\n                </span>\n            </div>\n            <div class=\"card-box\">\n                <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n                    <b>The Challenges&nbsp;</b>\n                    <br><br></h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{\n        'mbr-col-lg-6': cardsAmount == 2,                                       \n        'mbr-col-lg-4': cardsAmount == 3,\n        'mbr-col-lg-3': cardsAmount == 4,\n        'mbr-col-lg-2': cardsAmount > 4,\n        'last-child': cardsAmount == 2\n    }\" mbr-if=\"cardsAmount > 1\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-bulleted-list\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><b>The Rules</b></h4>\n            </div>\n        </div>\n    </div>\n    <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n    'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n    'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-users\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n                <b>Who we are&nbsp;</b>\n                <br><br></h4>\n            </div>\n        </div>\n    </div>\n    <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n    'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n    'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-desktop\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><b>The System</b>\n            </h4>\n        </div>\n    </div>\n</div>\n<div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n'last-child': cardsAmount == 5}\" mbr-if=\"cardsAmount > 4\">\n<div class=\"card-wrapper\">\n    <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n        <span class=\"iconfont-wrapper\">\n            <span mbr-icon class=\"amp-iconfont fa fa-gear\"></span>\n        </span>\n    </div>\n    <div class=\"card-box\">\n        <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n            <b>MANAGE\n            </b>\n            <div>A TALENTED TEAM</div>\n        </h4>\n    </div>\n</div>\n</div>\n<div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n'last-child': cardsAmount == 6}\" mbr-if=\"cardsAmount > 5\">\n<div class=\"card-wrapper\">\n    <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n        <span class=\"iconfont-wrapper\">\n            <span mbr-icon class=\"amp-iconfont fa fa-home\"></span>\n        </span>\n    </div>\n    <div class=\"card-box\">\n        <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n            <b>MANAGE\n            </b>\n            <div>A TALENTED TEAM</div>\n        </h4>\n    </div>\n</div>\n</div>\n</div>\n</div>\n</section>",
+          "_customHTML": "<section class=\"header6\" group=\"Headers\" plugins=\"amp-main, font-awesome\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Icon Title\" name=\"showIconTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Title Text\" name=\"showTitleText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#117bb1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Grand Reverse Engineering Challenge</b><br><b>$10,000 Prize Sum</b></h1>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-10 mbr-col-md-12\">\n                <p class=\"mbr-fonts-style mbr-text mbr-white italic align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showTitleText\"><br>Our next challenge runs from April 1 to May 15. The total prize sum is USD 10,000. Individuals and groups are welcome to participate. The only requirement is that you run our data collection framework in the background (within a Linux virtual machine) as you solve the challenges. The data collected will be published (anonymized, of course) and used to learn how reverse engineers solve problems in practice.</p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg btn-secondary\" href=\"http://revenge.cs.arizona.edu/RevEngECompetition/ctf/RevEngE_CTF_splash.html\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                GET STARTED</a></div>\n        </div>\n    </div>\n    <div class=\"padding\"></div>\n    <div class=\"mbr-row mbr-justify-content-center\">\n        <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{\n        'mbr-col-lg-6': cardsAmount == 2,                                                \n        'mbr-col-lg-4': cardsAmount == 3,\n        'mbr-col-lg-3': cardsAmount == 4,                                             \n        'mbr-col-lg-2': cardsAmount > 4,\n        'last-child': cardsAmount == 1}\">\n        <div class=\"card-wrapper\">\n            <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n                <span class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont mbri-lock\"></span>\n                </span>\n            </div>\n            <div class=\"card-box\">\n                <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><a href=\"challenges.html\">\n                    </a><b><a href=\"challenges.html\">The Challenges&nbsp;</a></b><a href=\"challenges.html\">\n                    </a><br><br></h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{\n        'mbr-col-lg-6': cardsAmount == 2,                                       \n        'mbr-col-lg-4': cardsAmount == 3,\n        'mbr-col-lg-3': cardsAmount == 4,\n        'mbr-col-lg-2': cardsAmount > 4,\n        'last-child': cardsAmount == 2\n    }\" mbr-if=\"cardsAmount > 1\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-bulleted-list\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><b><a href=\"rules.html\">The Rules</a></b></h4>\n            </div>\n        </div>\n    </div>\n    <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n    'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n    'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-users\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><a href=\"whoweare.html\">\n                </a><b><a href=\"whoweare.html\">Who we are&nbsp;</a></b><a href=\"whoweare.html\">\n                </a><br><br></h4>\n            </div>\n        </div>\n    </div>\n    <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n    'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n    'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n    <div class=\"card-wrapper\">\n        <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n            <span class=\"iconfont-wrapper\">\n                <span mbr-icon class=\"amp-iconfont mbri-desktop\"></span>\n            </span>\n        </div>\n        <div class=\"card-box\">\n            <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\"><b><a href=\"system.html\">The System</a></b><a href=\"system.html\">\n            </a></h4>\n        </div>\n    </div>\n</div>\n<div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n'last-child': cardsAmount == 5}\" mbr-if=\"cardsAmount > 4\">\n<div class=\"card-wrapper\">\n    <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n        <span class=\"iconfont-wrapper\">\n            <span mbr-icon class=\"amp-iconfont fa fa-gear\"></span>\n        </span>\n    </div>\n    <div class=\"card-box\">\n        <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n            <b>MANAGE\n            </b>\n            <div>A TALENTED TEAM</div>\n        </h4>\n    </div>\n</div>\n</div>\n<div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n'last-child': cardsAmount == 6}\" mbr-if=\"cardsAmount > 5\">\n<div class=\"card-wrapper\">\n    <div class=\"card-img iconbox\" mbr-if=\"showIcons\">\n        <span class=\"iconfont-wrapper\">\n            <span mbr-icon class=\"amp-iconfont fa fa-home\"></span>\n        </span>\n    </div>\n    <div class=\"card-box\">\n        <h4 class=\"card-title mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showIconTitle\" data-app-selector=\".card-title\">\n            <b>MANAGE\n            </b>\n            <div>A TALENTED TEAM</div>\n        </h4>\n    </div>\n</div>\n</div>\n</div>\n</div>\n</section>",
           "_cid": "sseLkfWTCQ",
           "_protectedParams": [],
           "_global": false,
@@ -158,265 +158,7 @@
         }
       ]
     },
-    "page1.html": {
-      "settings": {
-        "title": "WhoWeAre",
-        "order": 4
-      },
-      "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradient)": {
-                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when not (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background-color": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              },
-              "& when (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff",
-              "text-align": "left"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#ffffff"
-            },
-            "h1": {
-              "margin": "0"
-            },
-            "p": {
-              "margin-bottom": "2.5rem"
-            },
-            ".amp-iconfont": {
-              "margin-right": "0.5rem"
-            }
-          },
-          "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#022e93\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <select title=\"Justify\" name=\"justify\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#19a3c1\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{\n                 'mbr-justify-content-left': justify == 1,\n                 'mbr-justify-content-center': justify == 2,\n                 'mbr-justify-content-right': justify == 3}\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Who We Are</b></h1>\n                <p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">The Tigress Reverse Engineering Competition Engine has been &nbsp;built by Claire Taylor (under the direction of Christian Collberg) at the University of Arizona for her PhD dissertation research. The idea is to generate difficult reverse engineering problems and study how individuals complete these problems. The goal is to better understand the reverse engineering techniques used in practice and what constitutes effective software protection techniques. We provide cash prizes for individuals able to solve these problems and we study the methods employed to solve the problems through our data collection framework.&nbsp;<br></p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        <span class=\"fa fa-play-circle amp-iconfont mbr-iconfont-btn\"></span>GET STARTED</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "ssePR8vAZO",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "header1-1"
-        }
-      ]
-    },
-    "page2.html": {
-      "settings": {
-        "title": "Rules",
-        "order": 3
-      },
-      "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradient)": {
-                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when not (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background-color": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              },
-              "& when (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            ".container": {
-              "max-width": "800px"
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff",
-              "text-align": "center"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#ffffff",
-              "text-align": "center"
-            },
-            ".counter-container": {
-              "ol": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "2rem"
-                },
-                "& when (@stylizedCounters)": {
-                  "counter-reset": "myCounter",
-                  "li": {
-                    "z-index": "3",
-                    "list-style": "none",
-                    "padding-left": ".5rem",
-                    "&:before": {
-                      "z-index": "2",
-                      "position": "absolute",
-                      "left": "0px",
-                      "counter-increment": "myCounter",
-                      "content": "counter(myCounter)",
-                      "text-align": "center",
-                      "margin": "0 18px",
-                      "line-height": "40px",
-                      "transition": "all .2s",
-                      "color": "@counterColor",
-                      "font-weight": "bold",
-                      "border-radius": "50%",
-                      "opacity": "@counterOpacity",
-                      "font-size": "~\"@{counterSize}rem\""
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-text UL": {
-              "text-align": "left"
-            },
-            ".mbr-text LI": {
-              "color": "#ffffff"
-            },
-            ".mbr-text": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content9",
-          "_customHTML": "<section class=\"content9\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Size\" inline name=\"counterSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Opacity\" inline name=\"counterOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"stylizedCounters\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#6394ff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#6394ff\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-12 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Rules of Engagement</b></h1>\n                <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ol>\n                        <li>You will be provided 10 challenges. Some are compiled for Linux/x86/64, some are compiled for Linux/ARM. They are all statically linked and stripped binaries. The vary in complexity. There are two types of challenges: either deobfuscate the binary (convert it to idiomatic C) or modify the binary to behave differently (such as removing a licensing check).</li>\n                        <li>To be eligible for a prize you must run the RevEngE system in the background, typically within a virtual machine, and submit, along with the solution to the challenge, the data collected by RevEngE. &nbsp;</li><li>These are individual challenges. The individual who submits the most solutions, with the highest accuracy, within the shortest amount of time, wins USD 5,000. The second place winner receives USD 2000, and the third through fifth place winners each receive USD 1,000.</li><li>For the deobfuscation challenges, accuracy is determined by...</li>\n                    </ol>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                    <a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                    <a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "sseWvbskHd",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "content9-4"
-        }
-      ]
-    },
-    "page3.html": {
-      "settings": {
-        "title": "Challenges",
-        "order": 2
-      },
-      "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradient)": {
-                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when not (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background-color": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              },
-              "& when (@overlayGradient)": {
-                ".mbr-overlay": {
-                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            ".container": {
-              "max-width": "800px"
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff",
-              "text-align": "center"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#ffffff",
-              "text-align": "center"
-            },
-            ".counter-container": {
-              "ol": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "2rem"
-                },
-                "& when (@stylizedCounters)": {
-                  "counter-reset": "myCounter",
-                  "li": {
-                    "z-index": "3",
-                    "list-style": "none",
-                    "padding-left": ".5rem",
-                    "&:before": {
-                      "z-index": "2",
-                      "position": "absolute",
-                      "left": "0px",
-                      "counter-increment": "myCounter",
-                      "content": "counter(myCounter)",
-                      "text-align": "center",
-                      "margin": "0 18px",
-                      "line-height": "40px",
-                      "transition": "all .2s",
-                      "color": "@counterColor",
-                      "font-weight": "bold",
-                      "border-radius": "50%",
-                      "opacity": "@counterOpacity",
-                      "font-size": "~\"@{counterSize}rem\""
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-text UL": {
-              "text-align": "left"
-            },
-            ".mbr-text LI": {
-              "color": "#ffffff"
-            },
-            ".mbr-text": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content9",
-          "_customHTML": "<section class=\"content9\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Size\" inline name=\"counterSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Opacity\" inline name=\"counterOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"stylizedCounters\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#6394ff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#19a3c1\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-12 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Challenges</b></h1>\n                <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ol>\n                        <li>This challenge....</li>\n                        <li>This challenge...</li>\n                        <li>This challenge...</li>\n                    </ol>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                    <a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                    <a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "ssf1KegB7Y",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "content9-5"
-        }
-      ]
-    },
-    "page4.html": {
+    "system.html": {
       "settings": {
         "title": "System",
         "order": 1
@@ -658,7 +400,7 @@
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"content1\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Face\" name=\"showFace\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Image\" name=\"showImage\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-10\">\n                <div class=\"card-wrapper\">\n                    <amp-img class=\"face mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"114\" height=\"114\" alt=\"Mobirise\" mbr-if=\"showFace\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face13.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <h2 class=\"card-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Data Collection</h2>\n                    <h3 class=\"card-sub-title mbr-fonts-style align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">RevEngE</h3>\n                    <div class=\"card-img\" mbr-if=\"showImage\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.20.07-1104x618.png\" layout=\"responsive\" width=\"552\" height=\"309\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.20.07-1104x618.png\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Developed by Claire Taylor at the University of Arizona. The system runs in the background and collects information such as keyboard entry, mouse clicks, and screen shots to be used for later analysis.</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                            <a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\">\n                                LOREM IPSUM\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content1\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Face\" name=\"showFace\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Image\" name=\"showImage\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-10\">\n                <div class=\"card-wrapper\">\n                    <amp-img class=\"face mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"114\" height=\"114\" alt=\"Mobirise\" mbr-if=\"showFace\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face15.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <h2 class=\"card-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Data Collection</h2>\n                    <h3 class=\"card-sub-title mbr-fonts-style align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">RevEngE</h3>\n                    <div class=\"card-img\" mbr-if=\"showImage\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.20.07-1104x618.png\" layout=\"responsive\" width=\"552\" height=\"309\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.20.07-1104x618.png\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Developed by Claire Taylor at the University of Arizona. The system runs in the background and collects information such as keyboard entry, mouse clicks, and screen shots to be used for later analysis.</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                            <a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\">\n                                LOREM IPSUM\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content1-7",
           "_isUserblock": true,
           "_sourceTheme": "startupamp",
@@ -782,7 +524,7 @@
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"content1\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Face\" name=\"showFace\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Image\" name=\"showImage\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-10\">\n                <div class=\"card-wrapper\">\n                    <amp-img class=\"face mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"114\" height=\"114\" alt=\"Mobirise\" mbr-if=\"showFace\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face13.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <h2 class=\"card-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Visualization</h2>\n                    <h3 class=\"card-sub-title mbr-fonts-style align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">RevEngEViz</h3>\n                    <div class=\"card-img\" mbr-if=\"showImage\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.08.27-1104x585.png\" layout=\"responsive\" width=\"552.9435897435898\" height=\"293\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.08.27-1104x585.png\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Developed by Claire Taylor at the University of Arizona. The system analyzes the data collected by RevEngE to discover reverse engineering attack patterns.</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                            <a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\">\n                                LOREM IPSUM\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content1\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Face\" name=\"showFace\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Image\" name=\"showImage\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#527cd8\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-10\">\n                <div class=\"card-wrapper\">\n                    <amp-img class=\"face mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"114\" height=\"114\" alt=\"Mobirise\" mbr-if=\"showFace\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face15.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <h2 class=\"card-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Visualization</h2>\n                    <h3 class=\"card-sub-title mbr-fonts-style align-center\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">RevEngEViz</h3>\n                    <div class=\"card-img\" mbr-if=\"showImage\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.08.27-1104x585.png\" layout=\"responsive\" width=\"552.9435897435898\" height=\"293\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2021-03-20-at-16.08.27-1104x585.png\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Developed by Claire Taylor at the University of Arizona. The system analyzes the data collected by RevEngE to discover reverse engineering attack patterns.</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                            <a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\">\n                                LOREM IPSUM\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content1-8",
           "_isUserblock": true,
           "_sourceTheme": "startupamp",
@@ -791,6 +533,264 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        }
+      ]
+    },
+    "challenges.html": {
+      "settings": {
+        "title": "Challenges",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".container": {
+              "max-width": "800px"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".counter-container": {
+              "ol": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "2rem"
+                },
+                "& when (@stylizedCounters)": {
+                  "counter-reset": "myCounter",
+                  "li": {
+                    "z-index": "3",
+                    "list-style": "none",
+                    "padding-left": ".5rem",
+                    "&:before": {
+                      "z-index": "2",
+                      "position": "absolute",
+                      "left": "0px",
+                      "counter-increment": "myCounter",
+                      "content": "counter(myCounter)",
+                      "text-align": "center",
+                      "margin": "0 18px",
+                      "line-height": "40px",
+                      "transition": "all .2s",
+                      "color": "@counterColor",
+                      "font-weight": "bold",
+                      "border-radius": "50%",
+                      "opacity": "@counterOpacity",
+                      "font-size": "~\"@{counterSize}rem\""
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-text LI": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"content9\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Size\" inline name=\"counterSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Opacity\" inline name=\"counterOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"stylizedCounters\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#6394ff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#19a3c1\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-12 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Challenges</b></h1>\n                <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ol>\n                        <li>This challenge....</li>\n                        <li>This challenge...</li>\n                        <li>This challenge...</li>\n                    </ol>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                    <a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                    <a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "ssf1KegB7Y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content9-5"
+        }
+      ]
+    },
+    "rules.html": {
+      "settings": {
+        "title": "Rules",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".container": {
+              "max-width": "800px"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".counter-container": {
+              "ol": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "2rem"
+                },
+                "& when (@stylizedCounters)": {
+                  "counter-reset": "myCounter",
+                  "li": {
+                    "z-index": "3",
+                    "list-style": "none",
+                    "padding-left": ".5rem",
+                    "&:before": {
+                      "z-index": "2",
+                      "position": "absolute",
+                      "left": "0px",
+                      "counter-increment": "myCounter",
+                      "content": "counter(myCounter)",
+                      "text-align": "center",
+                      "margin": "0 18px",
+                      "line-height": "40px",
+                      "transition": "all .2s",
+                      "color": "@counterColor",
+                      "font-weight": "bold",
+                      "border-radius": "50%",
+                      "opacity": "@counterOpacity",
+                      "font-size": "~\"@{counterSize}rem\""
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            },
+            ".mbr-text LI": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"content9\" group=\"Content\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Size\" inline name=\"counterSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"stylizedCounters\">\n        <input type=\"range\" title=\"Counters Opacity\" inline name=\"counterOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"stylizedCounters\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#6394ff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#6394ff\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-12 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Rules of Engagement</b></h1>\n                <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ol>\n                        <li>You will be provided 10 challenges. Some are compiled for Linux/x86/64, some are compiled for Linux/ARM. They are all statically linked and stripped binaries. The vary in complexity. There are two types of challenges: either deobfuscate the binary (convert it to idiomatic C) or modify the binary to behave differently (such as removing a licensing check).</li>\n                        <li>To be eligible for a prize you must run the RevEngE system in the background, typically within a virtual machine, and submit, along with the solution to the challenge, the data collected by RevEngE. &nbsp;</li><li>These are individual challenges. The individual who submits the most solutions, with the highest accuracy, within the shortest amount of time, wins USD 5,000. The second place winner receives USD 2000, and the third through fifth place winners each receive USD 1,000.</li><li>For the deobfuscation challenges, accuracy is determined by...</li>\n                    </ol>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                    <a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                    <a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://mobiri.se\">LOREM IPSUM DOLOR</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "sseWvbskHd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content9-4"
+        }
+      ]
+    },
+    "whoweare.html": {
+      "settings": {
+        "title": "WhoWeAre",
+        "order": 4
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            "h1": {
+              "margin": "0"
+            },
+            "p": {
+              "margin-bottom": "2.5rem"
+            },
+            ".amp-iconfont": {
+              "margin-right": "0.5rem"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#022e93\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <select title=\"Justify\" name=\"justify\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#19a3c1\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{\n                 'mbr-justify-content-left': justify == 1,\n                 'mbr-justify-content-center': justify == 2,\n                 'mbr-justify-content-right': justify == 3}\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Who We Are</b></h1>\n                <p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">The Tigress Reverse Engineering Competition Engine has been &nbsp;built by Claire Taylor (under the direction of Christian Collberg) at the University of Arizona for her PhD dissertation research. The idea is to generate difficult reverse engineering problems and study how individuals complete these problems. The goal is to better understand the reverse engineering techniques used in practice and what constitutes effective software protection techniques. We provide cash prizes for individuals able to solve these problems and we study the methods employed to solve the problems through our data collection framework.&nbsp;<br></p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg mbr-editable-button btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        <span class=\"fa fa-play-circle amp-iconfont mbr-iconfont-btn\"></span>GET STARTED</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ssePR8vAZO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header1-1"
         }
       ]
     }
