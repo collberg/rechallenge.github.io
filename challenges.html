@@ -182,6 +182,22 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
                             <span style="font-weight: bold; background-color: #FFCCFF; color: black;">&nbsp;EXTRACT&nbsp;</span>
                             <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;ARM&nbsp;</span>
                           ): challenge-6-armv7-Linux.exe  is a protected version of the zip utility. A list of command-line arguments can be generated with “./challenge-6-armv7-Linux.exe --help”. An additional, undocumented command-line argument (-K “&lt;some string&gt;”) can be used to pass a key to the program. The program only produces valid zip-files when this key is correct. It is your job to find the correct key.</li>
+                       <li><strong>Challenge 7&nbsp;</strong>(
+                            <span style="font-weight: bold; background-color: #fff44f; color: black;">&nbsp;LIGHT&nbsp;</span>
+                            <span style="font-weight: bold; background-color: #FFCCCC; color: black;">&nbsp;TAMPER&nbsp;</span>
+                            <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;ARM&nbsp;</span>
+                            <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;X86&nbsp;</span>
+
+                          ): challenge-7-x86_64-Linux.exe and challenge-7-armv7-Linux.exe read two
+English words from standard input and print a number to standard
+output.  The words are no longer than 12 characters, consist of the
+lower case letters a-z, and have been taken from this 
+<a href="https://www.keithv.com/software/wlist/wlist_match1.zip">list</a>. For two
+particular words the program will crash with a segmentation fault. Your
+task is to modify the program to remove the code that causes this
+crash (it will now print a number to standard output) while maintaning 
+the same behavior as the original program for all other inputs.
+</li>
 
                     </ul><ul>
                     </ul>
