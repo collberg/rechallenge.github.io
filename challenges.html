@@ -41,7 +41,11 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
                             <strong>Home</strong>
                         </a>
 
-                    </li>
+                    </li><li class="nav-item"><a class="nav-link link text-white display-6" href="gettingstarted.html">
+                            <strong>Participate</strong>
+                        </a></li><li class="nav-item"><a class="nav-link link text-white display-6" href="page9.html">
+                            <strong>Submit</strong>
+                        </a></li>
                     <li class="nav-item">
                         <a class="nav-link link text-white display-6" href="challenges.html">
                             <strong>Challenges</strong>
@@ -68,7 +72,7 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
             <div class="navbar-brand">
                 
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-6" href="index.html">
-                        <strong>Grand Reverse Engineering Challenge</strong>
+                        <strong>Grand RE Challenge</strong>
                     </a></span>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,7 +82,11 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
                             <strong>Home</strong>
                         </a>
 
-                    </li>
+                    </li><li class="nav-item"><a class="nav-link link text-white display-6" href="gettingstarted.html">
+                            <strong>Participate</strong>
+                        </a></li><li class="nav-item"><a class="nav-link link text-white display-6" href="page9.html">
+                            <strong>Submit</strong>
+                        </a></li>
                     <li class="nav-item">
                         <a class="nav-link link text-white display-6" href="challenges.html">
                             <strong>Challenges</strong>
@@ -122,7 +130,7 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
             <div class="mbr-col-lg-12 mbr-col-md-12 text">
                 <h1 class="mbr-fonts-style mbr-section-title display-2"><strong>Challenges</strong></h1>
                 <blockquote>
-                    <p class="mbr-fonts-style mbr-text display-5">Round 1 of the Grand Reverse Engineering Challenge has 4 challenges, described below. Some are compiled for Linux/x86/64, some are compiled for Linux/ARM/32. The ARM binaries run well on a Raspberry Pi 4 (they have been tested on RPI4 running 32 bit Raspbian). There are three types of challenges: deobfuscation, tampering, and extraction.<br><br>Note that the challenges do not necessarily represent the best protections available from the obfuscation tools we have at our disposal - rather, they were designed to be possible to crack. Our end goal with this competition is to collect information for the community on how attacks are carried out in the real world. In other words, this is not a competition between providers of obfuscation tools, but a competition between attackers! We do not provide information on which tool was used to protect which challenge, and which protective transformations were employed - figuring this out is part of the challenge!<br><br>For each challenge we use the scale LIGHT, MEDIUM, HEAVY to give a rough indication of the amount of protection (i.e. obfuscation and tamperproofing)&nbsp;that has been added.&nbsp;</p>
+                    <p class="mbr-fonts-style mbr-text display-5">Round 1 of the Grand Reverse Engineering Challenge has 4 challenges, described below. Some are compiled for Linux/x86/64, some are compiled for Linux/ARM/32. The ARM binaries run well on a Raspberry Pi 4 (they have been tested on RPI4 running 32 bit Raspbian). There are three types of challenges: deobfuscation, tampering, and extraction.<br><br>Note that the challenges do not necessarily represent the best protections available from the obfuscation tools we have at our disposal - rather, they were designed to be possible to crack. Our end goal with this competition is to collect information for the community on how attacks are carried out in the real world. In other words, this is not a competition between providers of obfuscation tools, but a competition between attackers! We do not provide information on which tool was used to protect which challenge, and which protective transformations were employed - figuring this out is part of the challenge.<br><br>For each challenge we use the scale LIGHT, MEDIUM, HEAVY to give a rough indication of the amount of protection (i.e. obfuscation and tamperproofing)&nbsp;that has been added.&nbsp;</p>
                 </blockquote>
 
             </div>
@@ -155,7 +163,6 @@ body{font-family: Source Sans Pro;}blockquote{border-color: #e3699a;}div[submit-
                             <span style="font-weight: bold; background-color: #66CC33; color: black;">&nbsp;DEOBFUSCATE&nbsp;</span>
 
                             <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;X86&nbsp;</span>
-                            <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;ARM&nbsp;</span>
                                 ): challenge-2-x86_64-Linux.exe and challenge-2-armv7-Linux.exe read two unsigned 32-bit numbers in decimal form from the command line and print a number to standard output. The goal is to deobfuscate the program and return it to idiomatic C. The original function is small, less than 100 lines of C.</li>
 
                         <li>
