@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "rechallenge",
-    "currentPage": "challenges.html",
+    "currentPage": "system.html",
     "theme": {
       "name": "startupamp",
       "title": "StartupAMP",
@@ -42,7 +42,7 @@
     "noImageResize": "",
     "siteUrl": "undefined",
     "сanonical-url": "",
-    "uniqCompNum": 69,
+    "uniqCompNum": 70,
     "versionPublish": "4.10.10",
     "screenshot": "screenshot.png"
   },
