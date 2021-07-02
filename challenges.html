@@ -236,7 +236,24 @@ the same behavior as the original program for all other inputs.
                 <h1 class="mbr-fonts-style mbr-section-title display-2"><strong>Round 2</strong></h1>
                 <div class="mbr-text counter-container mbr-fonts-style display-6">
                     <ul>
-                        <li><strong>Coming soon!</strong></li>
+                        <li><strong>Challenge 8 ( 
+                            <span style="font-weight: bold; background-color: #fff99f; color: black;">&nbsp;VERY LIGHT&nbsp;</span>
+                          <span style="font-weight: bold; background-color: #FFCCFF; color: black;">&nbsp;EXTRACT&nbsp;</span>
+                          <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;ARM&nbsp;</span>):</strong> challenge-8-x86-Linux.exe &nbsp;takes a license key as its first argument on the command line. It is your job to find this key. The program&nbsp; prints an error message if the key is wrong</li>
+                        <li><strong>Challenge 9 (
+                          <span style="font-weight: bold; background-color: darkorange; color: black;">&nbsp;MEDIUM&nbsp;</span>
+                          <span style="font-weight: bold; background-color: #FFCCFF; color: black;">&nbsp;EXTRACT&nbsp;</span>
+                          <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;ARM&nbsp;</span>):</strong>                              challenge-9-x86-Linux.exe is a protected version of the <strong>bsdtar</strong> program provided by libarchive. A list of command-line arguments can be generated with <tt>./bsdtar --help</tt>. An additional, undocumented argument <tt>(-K “some string”)</tt> can be used to pass a license key to the program. Valid tarballs are produced only when this key is correct. Multiple license keys are possible. It is your job to write a key generator with which correct license keys can be generated.
+To generate a tarball use this command: <tt>
+./bsdtar --create --gzip -f tarball.tar.gz -K $KEY $INPUT_DIR</tt>. To list the files in the tarball use this command: <tt>
+./bsdtar --list -f tarball.tar.gz -K $KEY</tt>. This command will fail if the tarball is corrupted.</li>
+                        
+                      <li><strong>Challenge 10 (
+                            <span style="font-weight: bold; background-color: #fff44f; color: black;">&nbsp;LIGHT&nbsp;</span>
+                            <span style="font-weight: bold; background-color: #FFCCCC; color: black;">&nbsp;TAMPER&nbsp;</span>
+                            <span style="font-weight: bold; background-color: #383838; color: white;">&nbsp;X86&nbsp;</span>
+                          )</strong> You are given a binary challenge-10-x86-Linux.exe whose first argument is a password and whose second argument ia the input to a hash function. The outoput is a hash of the second. Your task is to remove the password check from the binary. The cracked binary should take 1 argument and function identically to the original binary if the correct password was entered. Submit the cracked binary. </li>
+                        
                     </ul>
                 </div>
                 
